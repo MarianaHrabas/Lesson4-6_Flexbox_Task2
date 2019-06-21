@@ -28,9 +28,10 @@ body {
     color:#141414;
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
-    font-size:12pt;
+    font-size:14px;
     padding:10px;
 }
+
 .header a:hover {
     color:#10c9c3;
 }
@@ -66,7 +67,7 @@ body {
 .contact_info p:first-child {
     font-family: 'Montserrat', sans-serif;
     font-weight:500;
-    font-size:16px;
+    font-size:18px;
 }
 
 .contact_info > p > span {
@@ -83,7 +84,7 @@ body {
 
 input[type="text"], #comment{
     font-family:'Nunito Sans', sans-serif; 
-    font-size:15;
+    font-size:15px;
     color: #171717;
     padding: 12px;
     border-radius: 3px;
@@ -109,7 +110,7 @@ input[type="text"], #comment{
     background-color:#10c9c3;
     border:none;
     color:white;
-    font-size:12;
+    font-size:12px;
     font-family: 'Montserrat', sans-serif;
     padding:10px 25px;
     text-align:center;
@@ -129,43 +130,51 @@ input[type="text"], #comment{
 
 .gmap_canvas{
     overflow:hidden;
-    background:none;
+    background: none;
     height:500px;
     width:1080px;
 }
 
 .footer{
-    display:flex;
-    height:15%;
-    width:100%;
-    background-color:black;
-    flex-wrap:wrap; 
-   
-  
-    padding:30px;
-}
-
-
-.footer {
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     background: #141414;
     padding: 50px 90px;
 }
+.footer > :nth-child(1) {
+    flex-grow: 3;
+}
+
+.footer > :nth-child(2) {
+    flex-grow: 3;
+}
+
+.footer > :nth-child(3) {
+    flex-grow: 1;
+}
+
+.footer > :nth-child(4) {
+    flex-grow: 3;
+}
+
+.footer > :nth-child(5) {
+    flex-grow: 1;
+}
 
 .footer_title {
     font-family: 'Montserrat', sans-serif;
-    font-size: 12pt;
+    font-size: 16px;
     color: #ffffff;
     padding:0; 
     margin:0;
 }
 
 .footer_text {
-    font-family:'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     color: #bcbcbc;
-    font-size: 8pt;
+    font-size: 12px;
 }
 
 .footer_text > a {
@@ -173,7 +182,3 @@ input[type="text"], #comment{
     text-decoration: none;
 }
 
-.footer:nth-child(1) {
-    display: flex;
-    flex-direction: column;
-}
